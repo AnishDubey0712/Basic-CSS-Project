@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.main_box{
+    background: url("Camera.jfif");
+    height: 100vh;
+    background-size: cover;
+}
+.Button1{
+    font-size: 30px;
+    font-weight: 700px;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.3s linear;
+}
+.sidebar_menu{
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(246, 242, 242, 0.07);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+    left: -300px;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo {
+    /* for main name changes */
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow: 0 2px 4px rgba(230, 228, 228, 0.5);
+    height: 60px;
+}
+.sidebar_menu .logo a {
+    /* for main name menu changes */
+position: absolute;
+left: 50px;
+color: rgb(246, 246, 247);
+
+text-decoration: none;
+font-size: 20px;
+font-weight: 500px;
+}
+.sidebar_menu .menu{
+    /* for menu position changes */
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+   
+    
+}
+.sidebar_menu .Button2 i {
+    /* for cross button changes */
+    color: gray;
+    font-size: 20px;
+    line-height: 60px;
+    position: absolute;
+    left: 280px;
+    /* opacity: 0;hideagain */
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .menu li {
+    /* for menu list changes */
+margin-top: 6px;
+padding: 14px 20px;
+}
+.sidebar_menu .menu i,a {
+    /* for menu icons and text changes */
+    color: white;
+    text-decoration:none;
+    font-size: 22px;
+}
+.sidebar_menu .menu i {
+    /* for menu icon changes */
+    padding-right: 10px;
+}
+.sidebar_menu .social_media {
+    /* for social media div changes */
+   
+    opacity: 0.3;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+.sidebar_menu .social_media i {
+    /* for social media icon changes */
+    color: white;
+    opacity: 0.5;
+    padding: 0.5px;
+}
+#check{
+    /* for checkbox  */
+    display: none; 
+}
+.sidebar_menu .menu li:hover{
+    /* for menu items hovering changes after click */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+} 
+.Button1 i:hover{
+    /* button1 icon hover */
+font-size: 40px;
+}
+.Button2 i:hover{
+    /* button2 icon hover */
+    font-size: 25px;
+    
+}
+.sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    
+}
+#check:checked ~.sidebar_menu {
+    left: 0;
+}
+#check:checked ~.Button1 i {
+    opacity: 0;
+}
